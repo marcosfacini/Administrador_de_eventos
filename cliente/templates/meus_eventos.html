@@ -1,0 +1,21 @@
+{% extends "bases/base_evento.html" %}
+{% load static %}
+
+
+{% block 'conteudo' %}
+
+<div class="container">
+    <br>
+    <br>
+    <div class="row">
+        {% for evento in eventos %}
+            <div class="col-md-4">
+                {{evento.nome}}
+
+                
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

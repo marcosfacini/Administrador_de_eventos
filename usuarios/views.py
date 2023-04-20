@@ -42,3 +42,6 @@ def login(request):
         
         auth.login(request, user)
         return redirect('/eventos/novo_evento/')
+    
+def home(request):
+    return render(request, 'home.html')
